@@ -1,0 +1,10 @@
+# CS6212 Project 1 — Option 2 (Asymptotic Analysis)
+
+This repo contains:
+- `run_option2_timings.py` — runs the Option 2 loops, measures median runtimes, writes `option2_timings.csv`.
+- `plot_compare.py` — reads the CSV, computes theory `ln(n)*ln(ln(n))`, fits a scale constant `c` by least squares, and saves a log–log comparison plot.
+
+## How to run
+```bash
+python3 run_option2_timings.py --min-exp 2 --max-exp 6 --trials 3 --csv option2_timings.csv
+python3 plot_compare.py --csv option2_timings.csv --out comparison_plot.png
